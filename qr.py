@@ -1,7 +1,8 @@
 from qrcode.main import QRCode
 
 qr = QRCode(version=1, box_size=20, border=5)
-qr.add_data("Hello World")
+data = str(input("Enter any text :"))
+qr.add_data(data)
 
 qr.make(fit=True)
 
